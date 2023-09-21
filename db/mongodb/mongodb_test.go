@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/microservices-demo/user/users"
 	"gopkg.in/mgo.v2/bson"
 	"gopkg.in/mgo.v2/dbtest"
+	"user/users"
 )
 
 var (

@@ -69,7 +69,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASS }}
-          dockerfile: go/src/github.com/microservices-demo/user/docker/user/Dockerfile-release
+          dockerfile: go/src/github.com/microservices-demo/user/docker/user/Dockerfile
           path: go/src/github.com/microservices-demo/user
           repository: ${{ env.GROUP }}/${{ env.REPO }}
           tag_with_ref: true

@@ -10,8 +10,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/microservices-demo/user/db"
-	"github.com/microservices-demo/user/users"
+	"user/db"
+	"user/users"
 )
 
 var (
@@ -56,7 +56,6 @@ func (s *fixedService) Login(username, password string) (users.User, error) {
 	db.GetUserAttributes(&u)
 	u.MaskCCs()
 	return u, nil
-
 }
 
 func (s *fixedService) Register(username, password, email, first, last string) (string, error) {
@@ -106,6 +105,7 @@ func (s *fixedService) GetAddresses(id string) ([]users.Address, error) {
 }
 
 func (s *fixedService) PostAddress(add users.Address, userid string) (string, error) {
+
 	err := db.CreateAddress(&add, userid)
 	return add.ID, err
 }

@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/microservices-demo/user/users"
+	"user/users"
 
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"

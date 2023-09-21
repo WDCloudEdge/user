@@ -52,5 +52,5 @@ func (l *Links) AddCard(id string) {
 }
 
 type Href struct {
-	string `json:"href"`
+	Url string `json:"href"`
 }
